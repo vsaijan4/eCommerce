@@ -1,0 +1,12 @@
+{
+	"id":1,
+	"name":"Shirt",
+	"description":"Black Full Hand Shirt",
+	"availableQuantity":25,
+	"maxRetailPrice":699.0,
+	"sellingPrice":455.0,
+	"manufactureDate":1450000000000,
+	"warranty":24,
+	"createdAt":1459496911170,
+	"updatedAt":1459496911170
+}

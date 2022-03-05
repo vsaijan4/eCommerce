@@ -1,0 +1,78 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'pmd'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'log4j:log4j:1.2.17'
+    
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.2.3'
+    compile 'org.glassfish.jersey.media:jersey-media-json-jackson:2.6'
+    
+	compile 'org.eclipse.jetty:jetty-server:9.3.9.M1'
+	compile 'org.eclipse.jetty:jetty-servlet:9.3.9.M1'
+
+    compile 'org.glassfish.jersey.core:jersey-server:2.22.2'
+	compile 'org.glassfish.jersey.containers:jersey-container-jetty-http:2.22.2'
+	compile 'org.glassfish.jersey.containers:jersey-container-servlet:2.22.2'
+
+    testCompile 'junit:junit:4.12'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class':'com.ecommerce.JettyServer'
+    }
+}
+
+task dbCreate() << {    
+    def currUserHome = "$System.env.HOME" + "/ecommerce/data/"
+    
+    def reviewDir = new File(currUserHome,"review/")
+    reviewDir.mkdirs()
+
+    def productDir = new File(currUserHome,"product/")
+    productDir.mkdirs()
+    
+    def userDir = new File(currUserHome,"user/")
+    userDir.mkdirs()
+    
+    def maxIDFile = new File(currUserHome,"MaxID.txt")
+    maxIDFile.text = "1:0\n2:100\n3:0\n"
+    
+    def lookUpFile = new File(currUserHome,"LookUp.txt")
+    lookUpFile.text = ""
+    
+    def upvoteFile = new File(currUserHome,"Upvote.txt")
+    upvoteFile.text = ""
+    
+    def logDir = new File(currUserHome,"logs/")
+    logDir.mkdirs()
+    
+    def serverOutLogFile = new File(currUserHome,"logs/serverOut.txt")
+    serverOutLogFile.text = ""
+    
+    println 'Finished dbCreate!'
+}
+
+task dbSeed << {
+	def currUserHome = "$System.env.HOME" + "/ecommerce/data/"
+    
+	Properties props = new Properties()
+	File propsFile = new File(projectDir, 'config.properties')
+	
+	props.setProperty('filePath', currUserHome)
+	props.store(propsFile.newWriter(), null)
+	
+	println 'Finished dbSeed!'
+}
+
+task dbSetup << {
+    println 'Finished dbSetup!'
+}
+
+dbSetup.dependsOn dbSeed
+dbSeed.dependsOn dbCreate

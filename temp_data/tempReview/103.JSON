@@ -1,0 +1,12 @@
+{
+	"id":103,
+	"productId":3,
+	"userId":1,
+	"title":"Good Title",
+	"description":"Good Description",
+	"rating":0.0,
+	"upvote":100,
+	"downvote":5,
+	"createdAt":1459768940899,
+	"updatedAt":1459768940899
+}

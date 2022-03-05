@@ -1,0 +1,12 @@
+{
+  "id" : 2,
+  "name" : "aa",
+  "description" : "desc",
+  "availableQuantity" : 12,
+  "maxRetailPrice" : 699.0,
+  "sellingPrice" : 545.0,
+  "manufactureDate" : 1450000000000,
+  "warranty" : 10,
+  "createdAt" : 1464334636330,
+  "updatedAt" : 1464334636330
+}

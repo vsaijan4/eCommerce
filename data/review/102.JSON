@@ -1,0 +1,12 @@
+{
+  "id" : 102,
+  "productId" : 1,
+  "userId" : 1,
+  "title" : "good",
+  "description" : "shirt is looking good",
+  "rating" : 4.9,
+  "upvote" : 0,
+  "downvote" : 0,
+  "createdAt" : 1464334620033,
+  "updatedAt" : 1464334620033
+}

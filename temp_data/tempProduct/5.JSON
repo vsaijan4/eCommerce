@@ -1,0 +1,12 @@
+{
+	"id":5,
+	"name":"Socks",
+	"description":"Navy Blue Socks",
+	"availableQuantity":20,
+	"maxRetailPrice":599.0,
+	"sellingPrice":499.0,
+	"manufactureDate":1450000000000,
+	"warranty":3,
+	"createdAt":1459496911170,
+	"updatedAt":1459496911170
+}

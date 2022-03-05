@@ -1,0 +1,12 @@
+{
+	"id":2,
+	"name":"Cap",
+	"description":"Red cap",
+	"availableQuantity":30,
+	"maxRetailPrice":199.0,
+	"sellingPrice":165.0,
+	"manufactureDate":1460000000000,
+	"warranty":2,
+	"createdAt":1459496911170,
+	"updatedAt":1459496911170
+}

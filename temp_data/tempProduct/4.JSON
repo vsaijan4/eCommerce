@@ -1,0 +1,12 @@
+{
+	"id":4,
+	"name":"Shoes",
+	"description":"Formal Shoes",
+	"availableQuantity":20,
+	"maxRetailPrice":1299.0,
+	"sellingPrice":899.0,
+	"manufactureDate":1450000000000,
+	"warranty":8,
+	"createdAt":1459496911170,
+	"updatedAt":1459496911170
+}

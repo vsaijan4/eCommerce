@@ -1,0 +1,11 @@
+{
+  "id" : 2,
+  "name" : "Shirt",
+  "email" : "Black Full Hand Shirt",
+  "phone" : "9988776655",
+  "age" : 25,
+  "gender" : "male",
+  "address" : "124",
+  "createdAt" : 1464334361913,
+  "updatedAt" : 1464334361913
+}

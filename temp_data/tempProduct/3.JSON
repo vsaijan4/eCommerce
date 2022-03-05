@@ -1,0 +1,12 @@
+{
+	"id":3,
+	"name":"Jeans",
+	"description":"Shaded Blue Jeans",
+	"availableQuantity":20,
+	"maxRetailPrice":1999.0,
+	"sellingPrice":1499.0,
+	"manufactureDate":1450000000000,
+	"warranty":36,
+	"createdAt":1459496911170,
+	"updatedAt":1459496911170
+}
